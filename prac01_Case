@@ -1,0 +1,27 @@
+class Main {
+  private static final String ADMIN = "admin";
+  private static final String NORMAL = "normal";
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    String o = pracCase();
+
+    System.out.print(o);
+  }
+
+  private static String pracCase() {
+    String role = "admin";
+    String retval = null;
+    switch (role) {
+      case ADMIN:
+        retval = role;
+      case NORMAL:
+        retval = role;
+        break;
+      default:
+        System.out.println("Default case");
+        retval = null;
+        break;
+    }
+    return retval;
+  }
+}
